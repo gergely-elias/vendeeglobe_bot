@@ -16,7 +16,7 @@ from vendeeglobe import (
 )
 from vendeeglobe.utils import distance_on_surface
 
-CREATOR = "TeamName"  # This is your team name
+CREATOR = "GhostOfMagellan"  # This is your team name
 
 
 class Bot:
@@ -26,18 +26,22 @@ class Bot:
 
     def __init__(self):
         self.team = CREATOR  # Mandatory attribute
-        self.avatar = 1  # Optional attribute
+        self.avatar = 7  # Optional attribute
         self.course = [
-            Checkpoint(latitude=43.797109, longitude=-11.264905, radius=50),
-            Checkpoint(longitude=-29.908577, latitude=17.999811, radius=50),
-            Checkpoint(latitude=-11.441808, longitude=-29.660252, radius=50),
-            Checkpoint(longitude=-63.240264, latitude=-61.025125, radius=50),
-            Checkpoint(latitude=2.806318, longitude=-168.943864, radius=1990.0),
-            Checkpoint(latitude=-62.052286, longitude=169.214572, radius=50.0),
-            Checkpoint(latitude=-15.668984, longitude=77.674694, radius=1190.0),
-            Checkpoint(latitude=-39.438937, longitude=19.836265, radius=50.0),
-            Checkpoint(latitude=14.881699, longitude=-21.024326, radius=50.0),
-            Checkpoint(latitude=44.076538, longitude=-18.292936, radius=50.0),
+            Checkpoint(latitude=18.37741, longitude=-67.93669, radius=50), # Puerto Rico W
+            Checkpoint(latitude=9.37652, longitude=-80.26767, radius=50), # Panama N
+            Checkpoint(latitude=5.61982, longitude=-78.74151, radius=50), # Panama S
+            Checkpoint(latitude=-15.306318, longitude=-173.943864, radius=50.0), # touching CP1
+            Checkpoint(latitude=-45.052286, longitude=160.214572, radius=50.0), # Tasman Sea
+            Checkpoint(latitude=13.534129, longitude=50.536723, radius=50.0), # Aden bay E
+            Checkpoint(latitude=11.095481, longitude=43.908339, radius=50.0), # Aden bay W
+            Checkpoint(latitude=29.566223, longitude=32.553761, radius=5.0), # Suez canal S
+            Checkpoint(latitude=32.110623, longitude=32.414745, radius=5.0), # Suez canal N
+            Checkpoint(latitude=37.205814, longitude=10.934190, radius=20.0), # Tunisia NE
+            Checkpoint(latitude=38.234707, longitude=6.115484, radius=20.0), # Sardinia SW
+            Checkpoint(latitude=35.927345, longitude=-5.169988, radius=5.0), # Gibraltar E
+            Checkpoint(latitude=37.033570, longitude=-10.109006, radius=50.0), # Portugal SW
+            Checkpoint(latitude=43.786129, longitude=-9.513288, radius=50.0), # Spain NW
             Checkpoint(
                 latitude=config.start.latitude,
                 longitude=config.start.longitude,
